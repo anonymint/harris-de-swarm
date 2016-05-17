@@ -1,6 +1,7 @@
 # SSO OAuth2 Vanila
  
 This is just prove of concept of *Single Sign On* or *SSO* implemented as separated to 3 applications. 
+Based on Spring Cloud oauth2 and docker, I put everything up here so we can just `docker-compse up`  
 
 ### Authorization 
 
