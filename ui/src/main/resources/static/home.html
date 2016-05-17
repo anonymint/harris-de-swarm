@@ -1,0 +1,25 @@
+<div class="jumbotron">
+	<h1>ABC Financial</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, mollitia?</p>
+</div>
+
+<div class="row">
+	<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda, dicta, doloremque ex, excepturi iure odit quae quia recusandae sequi tempore voluptatum! A accusantium, ad animi aut cumque dolor doloribus ducimus est ex illo mollitia neque nesciunt nihil nulla odit placeat rerum tempora voluptatem! Ab accusamus eum itaque possimus voluptatibus!</div>
+	<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at cumque doloremque, dolorum est eum facere fugiat in iste nihil, odio quae quisquam repellendus saepe sed vel, velit voluptate voluptates!</div>
+	<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laudantium maiores necessitatibus, nihil omnis porro quam quo voluptatem. Accusamus culpa dolores et eum incidunt neque obcaecati odit quia rerum tempore.</div>
+</div>
+
+<div class="row well" ng-controller="sso">
+	<div ng-show="!authenticated">
+		<p ng-hide="authenticated"><button type="button" class="btn btn-primary" ng-click="openPopup('/login','FooBar SSO',450,400 )">login</button> to see your Foo Bar Content</p>
+	</div>
+
+	<div ng-show="authenticated">
+		<h4>Article ID {{greeting.id}}</h4>
+		<h5>Hi {{name}}</h5>
+		<p>{{greeting.content}}</p>
+		<p>
+			<button type="button" class="btn btn-danger" ng-click="logout()">log out</button>
+		</p>
+	</div>
+</div>
