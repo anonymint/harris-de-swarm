@@ -1,20 +1,20 @@
-# SSO OAuth2 Vanila
+# Harris De Swarm [![Build Status](https://travis-ci.org/anonymint/harris-de-swarm.svg?branch=master)](https://travis-ci.org/anonymint/harris-de-swarm)
  
 This is just prove of concept of *Single Sign On* or *SSO* implemented as separated to 3 applications. 
 Based on Spring Cloud oauth2 and docker, I put everything up here so we can just `docker-compse up`  
 
 ### Authorization 
 
-This is where we authenticate and authorize users maintaning Token for all. 
+This is simple authorization server with default `admin/admin` 
 
 ### Resource
 
-Providing resources is the main purpose of this application but with help or OAuth2 we can secure our resource services.
+Let just imagine this is where we put security on top of all resources, we need to authorize with proper token to get access
 
 ### UI Application
 
-This is a last piece to show that not only private but 3rd part application can embed secured resources through OAuth2.
+Just a POV client to connect to Authorization server in order to access Resource.
 
-### How 
+### How to run 
 
-Coming soon!
+`docker-compose up -d` just for now but details will come soon!
