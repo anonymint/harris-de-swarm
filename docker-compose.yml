@@ -6,7 +6,6 @@ services:
     container_name: authorize-server
     ports:
       - "9999:9999"
-    network_mode: "host"
     networks:
       - front-tier
       - back-tier
@@ -16,7 +15,6 @@ services:
     container_name: resource-server
     ports:
       - "9000:9000"
-    network_mode: "host"
     links:
       - authorize-server
     networks:
@@ -27,7 +25,6 @@ services:
     build: ./ui/.
     ports:
       - "8080:8080"
-    network_mode: "host"
     links:
       - authorize-server
       - resource-server
