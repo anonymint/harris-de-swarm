@@ -16,7 +16,7 @@ services:
     ports:
       - "9000:9000"
     links:
-      - authorize-server
+      - authorize-server:authserver-local
     networks:
       - front-tier
       - back-tier
@@ -26,8 +26,8 @@ services:
     ports:
       - "8080:8080"
     links:
-      - authorize-server
-      - resource-server
+      - authorize-server:authserver-local
+      - resource-server:resource-local
     networks:
       - front-tier
       - back-tier

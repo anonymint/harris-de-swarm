@@ -13,4 +13,6 @@ ADD src /code/src
 RUN ["mvn", "dependency:resolve"]
 RUN ["mvn", "package"]
 
+EXPOSE 8080
+
 CMD ["java", "-jar", "target/oauth2-ui-0.0.1-SNAPSHOT.jar"]
