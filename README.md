@@ -17,4 +17,15 @@ Just a POV client to connect to Authorization server in order to access Resource
 
 ### How to run 
 
-`docker-compose up -d` just for now but details will come soon!
+####IDE
+
+In the project has 3 repos Authorization, Resource and UI powered by spring boot. To run it from IDE, we just run each application main to start up `spring boot` with `java8` installed 
+
+####Maven
+
+    mvn clean verify spring-boot:run
+    
+####Docker
+Less hassle if you don't want to install anything, it will start 3 apps and link everything.
+
+    docker-compose up -d 
