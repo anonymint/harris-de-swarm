@@ -27,7 +27,7 @@ services:
       - "8080:8080"
     links:
       - authorize-server:authserver-local
-      - resource-server:resource-local
+      - resource-server:resourceserver-local
     networks:
       - front-tier
       - back-tier
