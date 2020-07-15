@@ -1,4 +1,4 @@
-# Harris De Swarm 
+# Harris De Swarm ![Java CI](https://github.com/anonymint/harris-de-swarm/workflows/Java%20CI/badge.svg?branch=master&event=status)
 Note: Build on Travis is on hold, Moving to Github action soon!
  
 This is just prove of concept of *Single Sign On* or *SSO* implemented as separated to 3 applications. 
